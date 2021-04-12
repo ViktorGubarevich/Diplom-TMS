@@ -3,7 +3,7 @@ import LoginForm from "./LoginForm";
 
 class Validation extends Component {
   submit = () => {
-    window.location.assign("http://localhost:3000/second/");
+    window.location.assign("http://localhost:3000/location/");
   };
 
   getInitialValues() {
