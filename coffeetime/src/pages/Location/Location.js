@@ -1,18 +1,19 @@
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from "react";
+import { useHistory } from "react-router-dom";
 import SelectForm from "./SelectForm";
 
-class Location extends Component {
-  submit = () => {
-    window.location.assign("/location/place");
-  };
+function Location() {
+  const history = useHistory();
 
-  render() {
-    return (
-      <Fragment>
-        <SelectForm onSubmit={this.handleClick} />
-      </Fragment>
-    );
+  function submit(place) {
+    history.push(`/location/place/${place}`);
   }
+
+  return (
+    <Fragment>
+      <SelectForm handleSubmit={submit} />
+    </Fragment>
+  );
 }
 
 export default Location;

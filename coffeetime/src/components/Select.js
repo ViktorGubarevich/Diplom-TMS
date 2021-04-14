@@ -14,10 +14,10 @@ const Select = (props) => {
         <option value="" disabled>
           {props.placeholder}
         </option>
-        {props.options.map((option) => {
+        {props.options.map(({ id, name }) => {
           return (
-            <option key={option} value={option} label={option}>
-              {option}
+            <option key={id} value={id} label={name}>
+              {name}
             </option>
           );
         })}

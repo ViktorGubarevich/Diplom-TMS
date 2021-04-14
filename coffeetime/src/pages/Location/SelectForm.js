@@ -11,11 +11,19 @@ class SelectForm extends Component {
         place: "",
       },
 
-      placeOptions: ["Мстиславца, 8", "Пр. Победителей, 7"],
+      placeOptions: [
+        {
+          id: 1,
+          name: "Мстиславца, 8",
+        },
+        {
+          id: 2,
+          name: "Пр. Победителей, 7",
+        },
+      ],
     };
 
     this.handleInput = this.handleInput.bind(this);
-    this.handleClick = this.handleClick.bind(this);
   }
 
   handleInput(e) {
@@ -29,38 +37,29 @@ class SelectForm extends Component {
     }));
   }
 
-  handleClick(e) {
-    e.preventDefault();
-
-    this.context.router.transitionTo("/location/place");
-  }
-
   render() {
     const { handleSubmit } = this.props;
     return (
       <main className="main">
-        <form onSubmit={handleSubmit}>
-          <div className="main-data">
-            <div className="main-data-personal">
-              <Select
-                title={"Place"}
-                name={"place"}
-                options={this.state.placeOptions}
-                value={this.state.newUser.place}
-                placeholder={"Выберите ТО"}
-                handleChange={this.handleInput}
-              />
-            </div>
-            <button
-              className="button"
-              type="button"
-              // label="submit"
-              onClick={this.handleClick}
-            >
-              Открыть смену
-            </button>
+        <div className="main-data">
+          <div className="main-data-personal">
+            <Select
+              title={"Place"}
+              name={"place"}
+              options={this.state.placeOptions}
+              value={this.state.newUser.place}
+              placeholder={"Выберите ТО"}
+              handleChange={this.handleInput}
+            />
           </div>
-        </form>
+          <button
+            className="button"
+            type="submit"
+            onClick={() => handleSubmit(this.state.newUser.place)}
+          >
+            Открыть смену
+          </button>
+        </div>
       </main>
     );
   }

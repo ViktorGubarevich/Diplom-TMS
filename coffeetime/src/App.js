@@ -21,8 +21,12 @@ function App() {
         <Route path="/" exact>
           <Validation />
         </Route>
-        <Route path="/location">{wrapHeader(Location)}</Route>
-        <Route path="/location/place">{wrapHeader(Location)}</Route>
+        <Route path="/location" exact>
+          {wrapHeader(Location)}
+        </Route>
+        <Route path="/location/place/:id">
+          <Validation />
+        </Route>
       </Switch>
     </Router>
   );
