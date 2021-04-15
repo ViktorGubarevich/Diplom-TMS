@@ -15,10 +15,12 @@ class SelectForm extends Component {
         {
           id: 1,
           name: "Мстиславца, 8",
+          rout: "mstislavca",
         },
         {
           id: 2,
           name: "Пр. Победителей, 7",
+          rout: "pobeditelei7",
         },
       ],
     };

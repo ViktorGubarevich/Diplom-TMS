@@ -24,7 +24,7 @@ function App() {
         <Route path="/location" exact>
           {wrapHeader(Location)}
         </Route>
-        <Route path="/location/place/:id">
+        <Route path="/location/place/:rout">
           <Validation />
         </Route>
       </Switch>
