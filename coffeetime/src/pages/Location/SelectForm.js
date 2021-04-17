@@ -50,7 +50,7 @@ class SelectForm extends Component {
               name={"place"}
               options={this.state.placeOptions}
               value={this.state.newUser.place}
-              placeholder={"Выберите ТО"}
+              placeholder={"Выберите торговый объект"}
               handleChange={this.handleInput}
             />
           </div>
