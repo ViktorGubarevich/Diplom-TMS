@@ -17,7 +17,7 @@ function MainPageForm() {
       <div className="grid">
         <div id="admin">
           <div>
-            <Link to="../place/mstislavca/777" className="grid-button">
+            <Link to="../place/mstislavca/takeorder" className="grid-button">
               Принять заказ
             </Link>
           </div>

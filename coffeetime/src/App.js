@@ -6,6 +6,7 @@ import Login from "./pages/Login/Login";
 import HeaderProvider from "./components/Header/HeaderProvider";
 import Location from "./pages/Location/Location";
 import MainPage from "./pages/MainPage/MainPage";
+import TakeOrder from "./pages/TakeOrder/TakeOrder";
 
 function wrapHeader(Component) {
   return (
@@ -28,7 +29,9 @@ function App() {
         <Route path="/location/place/:rout" exact>
           {wrapHeader(MainPage)}
         </Route>
-        <Route path="/location/place/:rout/777">{wrapHeader(Location)}</Route>
+        <Route path="/location/place/:rout/takeorder">
+          <TakeOrder />
+        </Route>
       </Switch>
     </Router>
   );

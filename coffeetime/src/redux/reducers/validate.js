@@ -1,5 +1,3 @@
-export const requiredInput = (input) => (input ? undefined : `Требуется ввод`);
-
 export const correctInput = (input) =>
   input !== "Виктор" ? "Неправильное имя пользователя" : undefined;
 
