@@ -1,6 +1,4 @@
 import { combineReducers } from "redux";
-import todos from "./todos";
-import visibilityFilter from "./visibilityFilter";
-// import validate from "./validate";
+import orders from "./orders";
 
-export default combineReducers({ todos, visibilityFilter });
+export default combineReducers({ orders });

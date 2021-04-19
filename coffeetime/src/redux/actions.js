@@ -1,29 +1,16 @@
-import { ADD_TODO, TOGGLE_TODO, SET_FILTER } from "./actionTypes";
+import { ADD_ORDER, TOGGLE_ORDER } from "./actionTypes";
 
-let nextTodoId = 0;
+let nextOrderId = 0;
 
-export const addTodo = (content) => ({
-  type: ADD_TODO,
+export const addOrder = (content) => ({
+  type: ADD_ORDER,
   payload: {
-    id: ++nextTodoId,
+    id: ++nextOrderId,
     content,
   },
 });
 
-export const toggleTodo = (id) => ({
-  type: TOGGLE_TODO,
+export const toggleOrder = (id) => ({
+  type: TOGGLE_ORDER,
   payload: { id },
 });
-
-export const setFilter = (filter) => ({
-  type: SET_FILTER,
-  payload: { filter },
-});
-
-// export const correctInput = (input) => ({
-//   type: CORRECT_INPUT,
-//   input !== "Виктор" ? "Неправильное имя пользователя" : undefined,
-// })
-
-// export const correctPassword = (input) =>
-//   input !== "1111" ? "Неверный пароль" : undefined;

@@ -1,6 +1,6 @@
 import React from "react";
-import AddTodo from "../../components/AddTodo";
-import TodoList from "../../components/TodoList";
+import AddOrder from "../../components/AddOrder";
+import OrderList from "../../components/OrderList";
 import "./style.scss";
 
 function TakeOrderForm() {
@@ -8,8 +8,8 @@ function TakeOrderForm() {
     <div className="main">
       <div className="newOrder">
         <div className="first-section">
-          <AddTodo />
-          <TodoList />
+          <AddOrder />
+          <OrderList />
           <div className="first-section_basket">
             <div className="first-section_basket-products">
               <div className="first-section_basket-products_product">

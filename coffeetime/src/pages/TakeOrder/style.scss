@@ -202,11 +202,6 @@
     }
 }
 
-/** add todo **/
-.add-todo {
-    margin-left: 0.5rem;
-}
-
 /** todo list **/
 .todo-list {
     margin-top: 1rem;
@@ -216,12 +211,11 @@
 
 /** todo item **/
 .todo-item {
-    font-family: monospace;
-    cursor: pointer;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
     line-height: 1.5;
-}
-
-.todo-item__text--completed {
-    text-decoration: line-through;
-    color: lightgray;
+    text-align: center;
+    border: 1px solid #fa8f21;
 }

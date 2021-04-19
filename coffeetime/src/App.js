@@ -2,8 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./components/Header/header.scss";
 
-import Login from "./pages/Login/Login";
 import HeaderProvider from "./components/Header/HeaderProvider";
+import Login from "./pages/Login/Login";
 import Location from "./pages/Location/Location";
 import MainPage from "./pages/MainPage/MainPage";
 import TakeOrder from "./pages/TakeOrder/TakeOrder";
