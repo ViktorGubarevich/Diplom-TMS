@@ -8,6 +8,7 @@ export default function orders(state = initialState, action) {
       const { id, content } = action.payload;
       return [...state, { id, content, completed: false }];
     }
+
     case TOGGLE_ORDER: {
       const { id } = action.payload;
       const orders = state.slice();
