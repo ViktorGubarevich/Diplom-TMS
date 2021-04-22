@@ -125,20 +125,6 @@
     }
   }
 
-  &_total-cost {
-    display: flex;
-    justify-content: space-between;
-    color: black;
-    padding: 5px 0px;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 18px;
-    text-align: center;
-    padding: 5px 5px;
-  }
-
   &_href {
     color: white;
     background-color: #fa8f21;
@@ -153,15 +139,51 @@
   }
 }
 
-.bomba {
+.order-links {
   height: 100%;
   display: flex;
   align-content: flex-end;
   flex-direction: column-reverse;
 
+  &-button {
+    color: white;
+    background-color: #fa8f21;
+    padding: 15px 0px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+    border-top: 5px double white;
+    text-decoration: none;
+  }
+
   &-pay {
     display: flex;
     justify-content: space-between;
+    color: black;
+    padding: 5px 0px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+    padding: 5px 5px;
+
+    &-cost {
+      outline: none;
+    }
+
+    &input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+    &input[type='number'] {
+      -moz-appearance: textfield;
+    }
   }
 }
 
@@ -294,26 +316,20 @@
   display: flex;
   justify-content: space-between;
 
-  .PhoneInput {
-    &:value {
-      margin: 40px;
-    }
-  }
-
   &-button {
+    width: 100%;
     color: #ffffff;
     background: #fa8f21;
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 14px;
     border: 1px solid #ffffff;
     border-radius: 4px;
     outline: none;
     cursor: pointer;
     transition: all 0.2s ease-out;
-    padding: 7px;
-    margin-left: 100px;
+    margin-left: 150px;
   }
 }
