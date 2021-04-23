@@ -8,6 +8,11 @@ import Location from "./pages/Location/Location";
 import MainPage from "./pages/MainPage/MainPage";
 import TakeOrder from "./pages/TakeOrder/TakeOrder";
 import NewClient from "./pages/TakeOrder/NewClient/NewClient";
+import TimeTracking from "./pages/TimeTracking/TimeTracking";
+import ClosedOrders from "./pages/ClosedOrders/ClosedOrders";
+import Menu from "./pages/Menu/Menu";
+import Report from "./pages/Report/Report";
+import Warehouse from "./pages/Warehouse/Warehouse";
 
 function wrapHeader(Component) {
   return (
@@ -35,6 +40,21 @@ function App() {
         </Route>
         <Route path="/location/place/:rout/takeorder/newclient">
           <NewClient />
+        </Route>
+        <Route path="/location/place/:rout/timetracking">
+          <TimeTracking />
+        </Route>
+        <Route path="/location/place/:rout/closedorders">
+          <ClosedOrders />
+        </Route>
+        <Route path="/location/place/:rout/menu">
+          <Menu />
+        </Route>
+        <Route path="/location/place/:rout/report">
+          <Report />
+        </Route>
+        <Route path="/location/place/:rout/warehouse">
+          <Warehouse />
         </Route>
       </Switch>
     </Router>

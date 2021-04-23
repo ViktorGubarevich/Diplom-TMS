@@ -35,28 +35,28 @@ function MainPageForm() {
             </Link>
           </div>
           <div>
-            <Link to="/" className="grid-button">
+            <Link to="../place/mstislavca/timetracking" className="grid-button">
               Учет рабочего времени
             </Link>
           </div>
           <Button type="submit">Закрыть смену</Button>
           <div>
-            <Link to="/" className="grid-button">
+            <Link to="../place/mstislavca/closedorders" className="grid-button">
               Закрытые заказы
             </Link>
           </div>
           <div>
-            <Link to="/" className="grid-button">
+            <Link to="../place/mstislavca/menu" className="grid-button">
               Меню
             </Link>
           </div>
           <div>
-            <Link to="/" className="grid-button">
+            <Link to="../place/mstislavca/report" className="grid-button">
               Отчет
             </Link>
           </div>
           <div id="admin-box7">
-            <Link to="/" className="grid-button">
+            <Link to="../place/mstislavca/warehouse" className="grid-button">
               Склад
             </Link>
           </div>
