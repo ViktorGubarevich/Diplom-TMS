@@ -1,9 +1,9 @@
 import {
   ADD_ORDER,
   TOGGLE_ORDER,
-  // INCREMENT,
-  // DECREMENT,
-  // RESET,
+  INCREMENT,
+  DECREMENT,
+  RESET,
 } from "./actionTypes";
 
 let nextOrderId = 0;
@@ -21,14 +21,29 @@ export const toggleOrder = (id) => ({
   payload: { id },
 });
 
-// export function increaseCount() {
-//   return { type: INCREMENT };
-// }
+export function increaseCount() {
+  return { type: INCREMENT };
+}
 
-// export function decreaseCount() {
-//   return { type: DECREMENT };
-// }
+export function decreaseCount() {
+  return { type: DECREMENT };
+}
 
-// export function resetCount() {
-//   return { type: RESET };
-// }
+export function resetCount() {
+  return { type: RESET };
+}
+
+// export const increaseCount = (increase) => ({
+//   type: INCREMENT,
+//   payload: { increase },
+// });
+
+// export const decreaseCount = (decrease) => ({
+//   type: DECREMENT,
+//   payload: { decrease },
+// });
+
+// export const resetCount = (reset) => ({
+//   type: RESET,
+//   payload: { reset },
+// });
